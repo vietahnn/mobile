@@ -1,0 +1,12 @@
+{
+  "rules": {
+    "lich": {
+      ".read": true,
+      ".write": true,
+      "$lichId": {
+        ".validate": "newData.hasChildren(['hoVaTen', 'ngayGio', 'noiDung', 'linkAnh']) && newData.child('hoVaTen').isString() && newData.child('ngayGio').isNumber() && newData.child('noiDung').isString() && newData.child('linkAnh').isString()"
+      }
+    }
+  }
+}
+

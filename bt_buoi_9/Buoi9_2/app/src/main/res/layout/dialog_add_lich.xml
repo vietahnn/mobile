@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Lịch"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+    <EditText
+        android:id="@+id/edtHoVaTen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Họ tên"
+        android:inputType="textPersonName"
+        android:autofillHints="name" />
+
+    <EditText
+        android:id="@+id/edtNgayGio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ngày giờ (dd/mm/yyyy hh:mm)"
+        android:inputType="none"
+        android:focusable="false"
+        android:clickable="true" />
+
+    <EditText
+        android:id="@+id/edtNoidung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nội dung"
+        android:inputType="textMultiLine"
+        android:minLines="2"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/edtLinkAnh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="URL"
+        android:inputType="textUri"
+        android:autofillHints="" />
+</LinearLayout>
